@@ -1,5 +1,7 @@
 from random import randint
 from os import remove, rename
+from p import P
+import constant
 
 def getUserScore(userName):
     try:
@@ -19,3 +21,9 @@ def getUserScore(userName):
 
 if __name__ == '__main__':
     print(getUserScore('Carol'))
+
+    x = P(name='Alex', alias='amen')
+    x.who()
+
+    print(constant.PI)
+    print(constant.GRAVITY)
